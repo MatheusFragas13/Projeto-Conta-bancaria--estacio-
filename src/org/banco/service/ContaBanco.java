@@ -1,6 +1,5 @@
 package org.banco.service;
 
-import java.io.ObjectInputFilter.Status;
 
 import org.banco.model.UsuarioBanco;
 
@@ -12,28 +11,18 @@ public class ContaBanco {
         user1.setDono("Matheus Fragas");
         user1.SetSaldo(100.00);
         user1.setStatus(true);
-
-       
-    }
-
-    private void AbrirConta(boolean status){
-
+        user1.AbrirConta();
         
+
+       UsuarioBanco user2 = new UsuarioBanco();
+        user2.setNumconta(284024);
+        user2.setTipo("CC");
+        user2.setDono("Felipe Pereira");
+        user2.SetSaldo(0);
+        user2.setStatus(false);
+        user2.AbrirConta();
     }
+
     
-    private void fecharConta(double saldo, boolean status){
-
-        
-    }
-
-    private void sacar(double saldo, boolean status){
-
-        
-    }
-
-    private void pagarMensal(double saldo, String tipo){
-
-    }
-
-}
-
+}       
+      
